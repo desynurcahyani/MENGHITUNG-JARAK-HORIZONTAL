@@ -4,11 +4,18 @@ using namespace std;
 
 int main()
 {
-	double s, v;
-	cin >> s >> v;
-	v = v * v;
-	float jarak;
-	float sinA = sin(2 * s * 3.141 / 180);
-	jarak = (v * sinA) / 10;
-	cout << fixed << setprecision(2) << jarak;
+    cout<<"Menghitung Jarak Horizontal Terjauh Boro\n";
+    cout<<"========================================\n";
+    double s, v;
+    cout << "Masukkan sudut penerbangan burung : ";
+    cin >> s;
+    cout << endl;
+    cout << "Masukkan kecepatan burung : ";
+    cin >> v;
+    cout << endl;
+    v = pow(v,2);
+    float jarak;
+    float sinA = sin(2 * s * 3.141 / 180);
+    jarak = (v * sinA) / 10;
+    cout << fixed << setprecision(1) << "Jarak terjauh Boro adalah : " << jarak;
 }
